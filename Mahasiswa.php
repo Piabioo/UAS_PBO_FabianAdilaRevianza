@@ -19,7 +19,7 @@ abstract class Mahasiswa {
 
     // ==================== METODE ABSTRAK ====================
     
-    /**
+    /*
      * Menghitung total tagihan yang harus dibayar mahasiswa pada semester berjalan.
      * Implementasi berbeda untuk Mandiri, Bidikmisi (0), atau Prestasi (potongan/subsidi).
      */
