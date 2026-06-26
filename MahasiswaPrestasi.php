@@ -3,6 +3,7 @@
 require_once 'Mahasiswa.php';
 
 class MahasiswaPrestasi extends Mahasiswa {
+    // Properti Spesifik
     private string $namaInstansiBeasiswa;
     private float $minimalIpkSyarat;
 
@@ -12,8 +13,9 @@ class MahasiswaPrestasi extends Mahasiswa {
         $this->minimalIpkSyarat = $minimalIpkSyarat;
     }
 
+    // Overriding: Perhitungan tagihan skema Prestasi (Bayar 25% saja)
     public function hitungTagihanSemester(): float {
-        return $this->tarifUktNominal; 
+        return $this->tarifUktNominal * 0.25;
     }
 
     public function tampilkanSpesifikasiAkademik(): void {

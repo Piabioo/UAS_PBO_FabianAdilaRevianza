@@ -3,6 +3,7 @@
 require_once 'Mahasiswa.php';
 
 class MahasiswaMandiri extends Mahasiswa {
+    // Properti Spesifik
     private string $golonganUkt;
     private string $namaWali;
 
@@ -12,8 +13,9 @@ class MahasiswaMandiri extends Mahasiswa {
         $this->namaWali = $namaWali;
     }
 
+    // Overriding: Perhitungan tagihan skema Mandiri
     public function hitungTagihanSemester(): float {
-        return $this->tarifUktNominal;
+        return $this->tarifUktNominal + 100000.00;
     }
 
     public function tampilkanSpesifikasiAkademik(): void {

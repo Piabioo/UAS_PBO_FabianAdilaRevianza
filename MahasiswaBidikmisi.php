@@ -3,6 +3,7 @@
 require_once 'Mahasiswa.php';
 
 class MahasiswaBidikmisi extends Mahasiswa {
+    // Properti Spesifik
     private string $nomorKipKuliah;
     private float $danaSakuSubsidi;
 
@@ -12,8 +13,9 @@ class MahasiswaBidikmisi extends Mahasiswa {
         $this->danaSakuSubsidi = $danaSakuSubsidi;
     }
 
+    // Overriding: Perhitungan tagihan skema Bidikmisi
     public function hitungTagihanSemester(): float {
-        return 0.0; // Bebas biaya UKT
+        return 0.00;
     }
 
     public function tampilkanSpesifikasiAkademik(): void {
