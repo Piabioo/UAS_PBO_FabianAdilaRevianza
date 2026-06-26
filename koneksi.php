@@ -4,7 +4,7 @@ class Database {
     private string $host = "localhost";
     private string $username = "root";     // Sesuaikan dengan username database Anda
     private string $password = "";         // Sesuaikan dengan password database Anda
-    private string $database = "db_uas_pbo_fabianadilarevianza"; // Ubah sesuai nama database Anda
+    private string $database = "db_uas_pbo_trpl1a_fabianadilarevianza"; // Ubah sesuai nama database Anda
     protected ?PDO $conn = null;
 
     /**
